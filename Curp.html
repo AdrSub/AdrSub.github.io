@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap-5.3.0-dist/css/bootstrap.min.css">
+        <link href="CSS/texto.css" rel="stylesheet" type="text/css"/>
+
+    </head>
+
+
+    <body style="background-color:#9ec5fe">
+        <div class="text-decoration-none">
+           <h1><a href='index.html' class="centro m-3 p-3 rounded shadow text-decoration-none" style="background-color: white; align-content: center;">Renapo</a></h1>
+        </div>
+        <br><br>    
+    <center><div class='p-3 m-3 mx-auto rounded-2 col-7  my-2 border border-bottom shadow-lg'
+                 style='background-color: #cccccc'>
+            <br>
+            <br>
+            <h3 class='d-flex justify-content-center'>Datos requeridos</h3>
+            <form>
+                <br>
+                <label for="txtnombre" class="m-3 p-3">Nombre completo</label>
+                <input type="text" id="txtnombre"><br>
+
+                <label for="txtApellido1" class="m-3 p-3">Apellido paterno</label>
+                <input type="text" id="txtApellido1"><br>
+
+                <label for="txtapellido2" class="m-3 p-3">Apellido materno</label>
+                <input type="text" id="txtapellido2"><br>
+
+                <label for="txtFechaNacimiento" class="m-3 p-3">Fecha de nacimiento:</label>
+                <input type="date" id="txtFechaNacimiento"><br>
+
+                <label class="m-3 p-3" >Estado: </label>
+                <select class="d-block mb-3" id="txtEstado">
+                    <option value="AS">Aguascalientes</option>
+                    <option value="BC">Baja California</option>
+                    <option value="BS">Baja Califronia Sur</option>
+                    <option value="CC">Campeche</option>
+                    <option value="CL">Coahuila</option>
+                    <option value="CM">Colima</option>
+                    <option value="CS">Chiapas</option>
+                    <option value="CH">Chihuahua</option>
+                    <option value="DF">Ciudad de México</option>
+                    <option value="DG">Durango</option>
+                    <option value="GT">Guanajuato</option>
+                    <option value="GR">Guerrero</option>
+                    <option value="HG">Hidalgo</option>
+                    <option value="JC">Jalisco</option>
+                    <option value="MC">Estado de México</option>
+                    <option value="MN">Michoacán</option>
+                    <option value="MS">Morelos</option>
+                    <option value="NT">Nayarit</option>
+                    <option value="NL">Nuevo León</option>
+                    <option value="OC">Oaxaca</option>
+                    <option value="PL">Puebla</option>
+                    <option value="QT">Querétaro</option>
+                    <option value="QR">Quintana Roo</option>
+                    <option value="SP">San Luis Potosí</option>
+                    <option value="SL">Sinaloa</option>
+                    <option value="SR">Sonora</option>
+                    <option value="TC">Tabasco</option>
+                    <option value="TS">Tamaulipas</option>
+                    <option value="TL">Tlaxcala</option>
+                    <option value="VZ">Veracruz</option>
+                    <option value="YN">Yucatán</option>
+                    <option value="ZS">Zacatecas</option>
+                    <option value="NE">Nacido en el extranjero</option>
+                </select>
+                <label>
+                    <label for="txtgenero" class="m-3 p-3 centro">Genero:</label><br>
+                    <input type="radio" name="genero" value="H" id="txtHombre">
+                    Hombre
+                </label>
+                <label>
+                    <input type="radio" name="genero" value="M" id="txtMujer">
+                    Mujer
+                </label> <br><br>
+
+            </form>
+            <button onclick='calcular();' style="background-color:  chartreuse" class="m-3 p-3">Calcular</button><br><br>
+            <H1>Su CURP es:</H1>
+            <p id="txtGenerar" class="text-center"></p>
+
+        </div></center>
+    <script src="JS/Curp.js"></script>
+</body>
+</html>
